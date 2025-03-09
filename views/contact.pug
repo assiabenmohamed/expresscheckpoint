@@ -1,0 +1,40 @@
+extends layout
+
+block content
+  h1 Contactez-nous
+  p Nous sommes à votre écoute. N'hésitez pas à nous contacter pour toute question ou pour discuter de votre projet.
+
+  .contact-form
+    form
+      .form-group
+        label(for="nom") Nom
+        input(type="text", id="nom", name="nom", required)
+
+      .form-group
+        label(for="email") Email
+        input(type="email", id="email", name="email", required)
+
+      .form-group
+        label(for="sujet") Sujet
+        input(type="text", id="sujet", name="sujet", required)
+
+      .form-group
+        label(for="message") Message
+        textarea(id="message", name="message", rows="5", required)
+
+      button(type="submit") Envoyer
+
+  div(style="margin-top: 30px;")
+    h2 Informations de contact
+    p
+      strong Adresse :
+      |  123 Rue Exemple, 75000 Paris, France
+    p
+      strong Téléphone :
+      |  +33 1 23 45 67 89
+    p
+      strong Email :
+      |  contact@notreentreprise.fr
+    p
+      strong Heures d'ouverture :
+      |  Du lundi au vendredi, de 9h à 17h
