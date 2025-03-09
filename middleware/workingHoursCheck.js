@@ -6,7 +6,6 @@ function workingHoursCheck(req, res, next) {
   const now = new Date();
   const dayOfWeek = now.getDay(); // 0 = dimanche, 1 = lundi, ..., 6 = samedi
   const hour = now.getHours();
-
   // Vérification que nous sommes en semaine (1-5 = lundi à vendredi)
   // et entre 9h et 17h (inclus)
   const isWorkingDay = dayOfWeek >= 1 && dayOfWeek <= 5;
